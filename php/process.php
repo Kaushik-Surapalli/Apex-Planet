@@ -1,9 +1,17 @@
 <?php
 
-$name=$_POST["name"];
-$email=$_POST["email"];
+if(isset($_GET['name']))
+{
+    echo "<h2>GET Request</h2>";
+    echo "Welcome ".$_GET['name'];
+}
 
-echo "<h2>Name : $name</h2>";
-echo "<h2>Email : $email</h2>";
+echo "<br><br>";
+
+if(isset($_POST['email']))
+{
+    echo "<h2>POST Request</h2>";
+    echo "Email: ".$_POST['email'];
+}
 
 ?>

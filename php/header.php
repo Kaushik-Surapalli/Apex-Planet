@@ -1,10 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>PHP Demo</title>
-</head>
-<body>
-
-<header>
-    <h1>Kaushik's Portfolio</h1>
-</header>
+<hr>
+<h3>This is included using include()</h3>
