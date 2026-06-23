@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    flex-direction:column;
+}
+
+/* Navbar */
+.navbar{
+    background:rgba(0,0,0,0.15)!important;
+    backdrop-filter:blur(10px);
+}
+
+.navbar-brand{
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* Main Container */
+.container{
+    margin-top:40px;
+}
+
+/* Glass Card */
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:25px;
+    color:white;
+    transition:0.5s;
+    animation:fadeIn 1s ease;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+h2{
+    font-weight:700;
+}
+
+label{
+    color:white;
+    margin-bottom:5px;
+}
+
+.form-control{
+    border:none;
+    border-radius:15px;
+    padding:12px;
+    background:rgba(255,255,255,.2);
+    color:white;
+}
+
+.form-control::placeholder{
+    color:#e0e0e0;
+}
+
+.form-control:focus{
+    background:rgba(255,255,255,.25);
+    color:white;
+    box-shadow:none;
+}
+
+.form-check-label{
+    color:white;
+}
+
+small{
+    font-weight:500;
+}
+
+/* Buttons */
+.btn{
+    border:none;
+    border-radius:15px;
+    padding:12px;
+    transition:.4s;
+}
+
+.btn-primary{
+    background:#00b4db;
+}
+
+.btn-success{
+    background:#00c851;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Navbar Links */
+.nav-link{
+    color:white!important;
+    position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background:white;
+    position:absolute;
+    left:0;
+    bottom:0;
+    transition:.3s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .card{
+        margin-bottom:20px;
+    }
+
+    h2{
+        font-size:1.7rem;
+    }
+
+}
